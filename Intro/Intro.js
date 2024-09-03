@@ -91,5 +91,10 @@ It similar like that route
 it declare to root file
 create a layout.jsx file and call {children}
 /------------Title metadata-------------/
-
+export function generateMetadata() {
+  return {
+    title: "Welcome to JB Website",
+    description: "This is JB Website",
+  };
+}
 */
