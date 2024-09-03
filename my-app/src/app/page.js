@@ -1,4 +1,5 @@
 "use client";
+
 import State from "@/State";
 
 export default function Home() {
@@ -9,7 +10,9 @@ export default function Home() {
   return (
     <main>
       <h1></h1>
-      <button onClick={fun}>Click </button>
+      <button onClick={fun} className="btn">
+        Click{" "}
+      </button>
       <State />
     </main>
   );
