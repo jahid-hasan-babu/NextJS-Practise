@@ -76,7 +76,7 @@ next show auto 404 page.but we can edit and customize it.
 /------------Middleware-------------/
 Middleware is a function 
 middleware file will be create in src file
-import to NextResponse 
+import to NextResponsemi 
 
 /------------File colocation Private Folders-------------/
 when we create a file tsx, js, jsx then ut public and other file is private thats call colocation -->it means default set 
@@ -91,10 +91,16 @@ It similar like that route
 it declare to root file
 create a layout.jsx file and call {children}
 /------------Title metadata-------------/
-export function generateMetadata() {
-  return {
-    title: "Welcome to JB Website",
-    description: "This is JB Website",
-  };
-}
+/------------Link component navigation-------------/
+we can navigate 3 way
+1.Link--><a>tag</a> it use when use go one page to another page
+2.useRouterHook -->it use when use go one component to another component
+3.history api --> we don`t use it frontend
+/------------Link active navigation-------------/
+don`t use use client in main layout.js;
+we use usePathname  to achieve this
+/------------share component-------------/
+
+
+
 */
