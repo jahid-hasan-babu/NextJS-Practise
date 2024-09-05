@@ -100,7 +100,12 @@ we can navigate 3 way
 don`t use use client in main layout.js;
 we use usePathname  to achieve this
 /------------share component-------------/
+/------------Template file-------------/
+it re render layout when we navigate 
+it`s a server component
 
-
+/------------Rendering-------------/
+rendering means code convert to view 
+it allows to server and client we call it hybrid
 
 */
