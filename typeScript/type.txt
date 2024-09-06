@@ -1,0 +1,7 @@
+<----------------introduction------------------>
+type + script == Javascript
+to handle type we use typescript
+it`s build 2012 by ms.
+extension -->ts
+
+
