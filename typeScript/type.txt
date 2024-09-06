@@ -9,4 +9,5 @@ global-npm install -g typescript
 local- npm install -save-dev typescript
 Check installed or not: --> tsc --version
 
-
+<----------------auto compile------------------>
+tsc index.ts --watch
