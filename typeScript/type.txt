@@ -11,3 +11,10 @@ Check installed or not: --> tsc --version
 
 <----------------auto compile------------------>
 tsc index.ts --watch
+
+<----------------built in type------------------>
+built in type: number, string, boolean, void, null
+if we return a function then use --->void
+<----------------union type------------------>
+| ----->union symbol 
+by union we use many type
