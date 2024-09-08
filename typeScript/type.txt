@@ -19,3 +19,6 @@ if we return a function then use --->void
 | ----->union symbol 
 by union we use many type
 <----------------array data type------------------>
+let multipleType: (string | number)[]; // multiple type array
+<----------------tuple type------------------>
+//mixed data -- key, value
