@@ -18,3 +18,4 @@ if we return a function then use --->void
 <----------------union type------------------>
 | ----->union symbol 
 by union we use many type
+<----------------array data type------------------>
