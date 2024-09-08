@@ -22,3 +22,8 @@ by union we use many type
 let multipleType: (string | number)[]; // multiple type array
 <----------------tuple type------------------>
 //mixed data -- key, value
+<----------------enum type------------------>
+// enum --> store constants, duplicate value is not allowed here
+//enum types: numeric , string, hetergenous
+<----------------any type------------------>
+let userName: any;  --> store any type data
