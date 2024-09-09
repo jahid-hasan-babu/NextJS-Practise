@@ -27,3 +27,6 @@ let multipleType: (string | number)[]; // multiple type array
 //enum types: numeric , string, hetergenous
 <----------------any type------------------>
 let userName: any;  --> store any type data
+<----------------object type------------------>
+
+optional korte caile -- ? 
