@@ -30,3 +30,10 @@ let userName: any;  --> store any type data
 <----------------object type------------------>
 
 optional korte caile -- ? 
+
+<----------------custom object type------------------>
+
+<----------------class------------------>
+properties, methods, constructor
+
+
