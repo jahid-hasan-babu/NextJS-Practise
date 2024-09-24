@@ -1,0 +1,1 @@
+"noEmitOnError": true,  use korle error hole js a convert hobe na
