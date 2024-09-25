@@ -1,1 +1,3 @@
 "noEmitOnError": true,  use korle error hole js a convert hobe na
+TypeScript is a superset of JavaScript that adds static typing, enabling developers to catch errors during development and write more reliable, maintainable code. It supports modern JavaScript features and compiles to plain JavaScript, making it compatible with any JS environment
+: --> its call type annotation
