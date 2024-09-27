@@ -1,3 +1,5 @@
 "noEmitOnError": true,  use korle error hole js a convert hobe na
 TypeScript is a superset of JavaScript that adds static typing, enabling developers to catch errors during development and write more reliable, maintainable code. It supports modern JavaScript features and compiles to plain JavaScript, making it compatible with any JS environment
 : --> its call taae annotation
+when we work dynamic data then use any
+if we set type it call type annotation if it get automatically it call inference
