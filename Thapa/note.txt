@@ -3,3 +3,9 @@ TypeScript is a superset of JavaScript that adds static typing, enabling develop
 : --> its call taae annotation
 when we work dynamic data then use any
 if we set type it call type annotation if it get automatically it call inference
+
+for..of --> return value;
+for..in --> in means index --> return index;
+foreach --> each value
+map --> return new array --if we need all data
+filter --> if we need only filter data
