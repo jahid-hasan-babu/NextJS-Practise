@@ -9,3 +9,6 @@ for..in --> in means index --> return index;
 foreach --> each value
 map --> return new array --if we need all data
 filter --> if we need only filter data
+
+tuples are a data structure that allows you to store a fixed-size collection of elements of different types.
+we use tuple cause in array user that not push any data
