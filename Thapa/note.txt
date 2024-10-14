@@ -12,3 +12,6 @@ filter --> if we need only filter data
 
 tuples are a data structure that allows you to store a fixed-size collection of elements of different types.
 we use tuple cause in array user that not push any data
+
+/ --> union symbol
+& intersection symbol
