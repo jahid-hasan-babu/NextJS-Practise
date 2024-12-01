@@ -1,5 +1,5 @@
 export interface Students {
-  id: number;
+  _id: number;
   firstName: string;
   lastName: string;
   gender: string;
@@ -8,4 +8,6 @@ export interface Students {
   address: string;
   email: string;
   phone: string;
+  admissionDate: string;
+  courses: string;
 }

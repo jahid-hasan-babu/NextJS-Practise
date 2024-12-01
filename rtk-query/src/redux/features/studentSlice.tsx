@@ -7,7 +7,7 @@ export const studentApi = createApi({
     baseUrl: "https://mern-crud-app-peach.vercel.app/api/v1",
   }),
   endpoints: (builder) => ({
-    getStudents: builder.query<Students[], void>({
+    getStudents: builder.query<{ data: Students[] }, void>({
       query: () => "/read-studentsList",
     }),
   }),
