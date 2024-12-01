@@ -1,10 +1,14 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
-import { useGetStudentsQuery } from "@/redux/features/studentSlice";
+import {
+  useDeleteStudentMutation,
+  useGetStudentsQuery,
+} from "@/redux/features/studentSlice";
 import Link from "next/link";
 
 export default function StudentList() {
   const { data: students, isLoading, isError } = useGetStudentsQuery();
+  const [deleteStudent] = useDeleteStudentMutation();
 
   return (
     <div className="w-11/12 mx-auto pb-9">
@@ -51,20 +55,20 @@ export default function StudentList() {
                   <td>
                     <Link
                       className="btn btn-success"
-                      href={`/update-student/${student?.id}`}
+                      href={`/register/?id=${student?._id}`}
                     >
                       Edit
                     </Link>
                   </td>
                   <td>
-                    {/* <button
-                            onClick={() => {
-                              onDelete(student["_id"]);
-                            }}
-                            className="btn btn-error"
-                          >
-                            Delete <RiDeleteBinLine />
-                          </button> */}
+                    <button
+                      onClick={() => {
+                        deleteStudent(student?._id);
+                      }}
+                      className="btn btn-error"
+                    >
+                      Delete
+                    </button>
                   </td>
                 </tr>
               );
