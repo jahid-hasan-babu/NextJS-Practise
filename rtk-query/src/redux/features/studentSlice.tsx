@@ -12,18 +12,19 @@ export const studentApi = createApi({
       query: () => "/read-studentsList",
       providesTags: ["Students"],
     }),
-    getSingleStudents: builder.query<{ data: Students[] }, void>({
-      query: (id) => `/read-oneStudent/${id}`,
-      providesTags: ["Students"],
-    }),
-    updateStudent: builder.mutation<void, Students>({
-      query: (student) => ({
-        url: `/update-studentList${student._id}`,
-        method: "PUT",
-        body: student,
-      }),
-      invalidatesTags: ["Students"],
-    }),
+   getSingleStudents: builder.query<{ data: Students[] }, string>({
+  query: (id: string) => `/read-oneStudent/${id}`,
+  providesTags: ["Students"],
+}),
+  updateStudent: builder.mutation<string, Students>({
+  query: ({ _id, ...rest }) => ({
+    url: `/update-student/${_id}`,  // URL should include the student ID
+    method: "POST",
+    body: rest,  // The body should not include _id
+  }),
+  invalidatesTags: ["Students"],
+}),
+
     createStudent: builder.mutation<void, Students>({
       query: (formData) => ({
         url: "/create-studentList",
