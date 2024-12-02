@@ -20,6 +20,7 @@ export default function Register() {
   const id: string | null = searchParams.get("id");
 
   const { data } = useGetSingleStudentsQuery(id!);
+  const [updateStudent] = useUpdateStudentMutation();
 
   // const handleChange = (e: any) => {
   //   setFormData({
@@ -51,6 +52,7 @@ export default function Register() {
   const handleSubmit = async (e: any) => {
     e.preventDefault();
     if (editMode) {
+      await updateStudent(formData);
     }
     if (formData) {
       await createStudent(formData);
@@ -157,8 +159,7 @@ export default function Register() {
               Address
             </label>
             <textarea
-              rows="1"
-              cols="10"
+             
               id="address"
               name="address"
               value={formData.address || ""}
