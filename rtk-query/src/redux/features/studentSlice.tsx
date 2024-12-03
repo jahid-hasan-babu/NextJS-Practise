@@ -18,9 +18,9 @@ export const studentApi = createApi({
 }),
   updateStudent: builder.mutation<string, Students>({
   query: ({ _id, ...rest }) => ({
-    url: `/update-student/${_id}`,  // URL should include the student ID
+    url: `/update-student/${_id}`,  
     method: "POST",
-    body: rest,  // The body should not include _id
+    body: rest,  
   }),
   invalidatesTags: ["Students"],
 }),
@@ -43,7 +43,7 @@ export const studentApi = createApi({
   }),
 });
 
-// { data: Students }
+
 
 export const {
   useGetStudentsQuery,
